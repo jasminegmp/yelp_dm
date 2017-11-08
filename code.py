@@ -79,10 +79,9 @@ with open('reviews.csv') as rfile:
 #dates=list(set(dates));
 sorted(dates, key=lambda d: map(int, d.split('-')))
 
-plt.scatter(dates, stars, s, c="g", alpha=0.5, marker=r'$\clubsuit$',
-            label="Luck")
-plt.xlabel("Leprechauns")
-plt.ylabel("Gold")
+plt.scatter(dates, stars,label=“stars”)
+plt.xlabel("time stamps")
+plt.ylabel("stars")
 plt.legend(loc=2)
 plt.show()
 
