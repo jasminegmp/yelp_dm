@@ -10,14 +10,13 @@ from matplotlib import pyplot as plt
 ############################################
 ############################################
 def create_csv(gen_category, categories):
-	csvFile=csv.writer(open(gen_category+".csv","wb+"));
-	csvFile.writerow(["name", "id", "date", "stars","text"]);
+
 
 	idList=[];
 	name = [];
-	print "         searching for ids related to that category ... ",
+	print "         searching for ids related to that category ... \n",
 	c=0
-
+	print categories
 	for cat in categories:
 		with open('business.csv') as bfile:
 			reader = csv.reader(bfile);
@@ -28,26 +27,33 @@ def create_csv(gen_category, categories):
 					name.append(row[1])
 
 	print len(name), "matches found"
-	#print name
-	############################################
-	############################################
+	if len(name) > 500:
+		csvFile=csv.writer(open(gen_category+".csv","wb+"));
+		csvFile.writerow(["name", "id", "date", "stars","text"]);
+		#print name
+		############################################
+		############################################
 
-	dates=[]
-	stars=[]
-	count=0
+		dates=[]
+		stars=[]
+		count=0
 
-	with open('reviews.csv') as rfile:
-	    rreader=csv.reader(rfile)
-	    for rrow in rreader:
-	    	#print rrow
-	        if rrow[0] in idList:
-				if count < len(name):
-					csvFile.writerow([name[count], rrow[0],rrow[1],rrow[2],rrow[3]]);
-					dates.append(rrow[1]);
-					stars.append(rrow[2]);
-					count+=1
-				else:
-					break
+		with open('reviews.csv') as rfile:
+		    rreader=csv.reader(rfile)
+		    for rrow in rreader:
+		    	#print rrow
+		        if rrow[0] in idList:
+					if count < len(name):
+						csvFile.writerow([name[count], rrow[0],rrow[1],rrow[2],rrow[3]]);
+						dates.append(rrow[1]);
+						stars.append(rrow[2]);
+						count+=1
+					else:
+						break
+		return 1
+	else:
+		print "Not enough data points. Won't create csv."
+		return 0
 
 
 
