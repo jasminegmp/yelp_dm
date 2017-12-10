@@ -2,6 +2,7 @@ from matplotlib import pyplot as plt
 import pandas as pd
 import math
 import numpy as np
+import get_csv
 
 # Download this https://pypi.python.org/pypi/fastdtw
 from scipy.spatial.distance import euclidean
@@ -19,11 +20,15 @@ def preprocess_ts(df):
 	new_df = df.set_index('date')
 
 	# Perform rolling average
-	ts = pd.Series.rolling(new_df['stars'], window=100).mean()
+	if len(df) > 100:
+		ts = pd.Series.rolling(new_df['stars'], window=100).mean()
+	else:
+		ts = pd.Series.rolling(new_df['stars'], window=10).mean()
 
 	# Remove any NA datapoints
 	ts = ts.dropna()
-
+	#print ts
+	#print new_df
 	return ts, new_df
 
 def perform_dtw(ts_1, ts_2):
@@ -62,7 +67,6 @@ def normalize_quartile(ts, new_df):
 		ts_time.append(temp_quartile)
 		temp_val = ts.ix[i]
 		ts_value.append(temp_val)
-	#print ts
 	return ts_time, ts_value
 
 # perform z-normalization (from 0 to 1)
@@ -76,9 +80,10 @@ def z_normalization(ts_time, ts_val,):
 
 
 def pattern_finder(bName_1, bName_2):
-
-	bName1_csv = bName_1 + ".csv"
-	bName2_csv = bName_2 + ".csv"
+	bName1_csv = get_csv.alphanumeric_name(bName_1)
+	bName2_csv = get_csv.alphanumeric_name(bName_2)
+	bName1_csv = bName1_csv + ".csv"
+	bName2_csv = bName2_csv + ".csv"
 
 	bData_1 = pd.read_csv(bName1_csv)
 	bData_2 = pd.read_csv(bName2_csv)
@@ -96,9 +101,10 @@ def pattern_finder(bName_1, bName_2):
 	return dtw_dist
 
 def pattern_finder_quartile(bName_1, bName_2):
-
-	bName1_csv = bName_1 + ".csv"
-	bName2_csv = bName_2 + ".csv"
+	bName1_csv = get_csv.alphanumeric_name(bName_1)
+	bName2_csv = get_csv.alphanumeric_name(bName_2)
+	bName1_csv = bName1_csv + ".csv"
+	bName2_csv = bName2_csv + ".csv"
 
 	bData_1 = pd.read_csv(bName1_csv)
 	bData_2 = pd.read_csv(bName2_csv)

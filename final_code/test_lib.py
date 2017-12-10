@@ -11,15 +11,16 @@ def run_test(test_id, arg1, arg2):
 	test_function = { 1: run_test_1,
 					2: run_test_2,
 					3: run_test_3,
+					4: run_test_4,
 	}
 	test_function[test_id](arg1, arg2)
 
 
 # This test runs category vs category using DTW
-def run_test_1(category_txt):
+def run_test_1(category_txt, nop):
 
 	found_category_list = []
-	output_txt = category_txt + "_output.txt"
+	output_txt = category_txt + "_output_1.txt"
 	category_txt = category_txt + ".txt"
 
 	fileobj = open(category_txt)
@@ -45,9 +46,9 @@ def run_test_1(category_txt):
 
 
 # This test runs category vs category using time normalization and DTW
-def run_test_2(category_txt):
+def run_test_2(category_txt, nop):
 	found_category_list = []
-	output_txt = category_txt + "_output.txt"
+	output_txt = category_txt + "_output_2.txt"
 	category_txt = category_txt + ".txt"
 
 	fileobj = open(category_txt)
@@ -72,13 +73,16 @@ def run_test_2(category_txt):
 			fileobj.write(comparison + "\n")
 	fileobj.close()
 
-# This test runs company vs categories using time normalization and DTW
+# This test runs company vs categories using time normalization, z normalization and DTW
 def run_test_3(bName, category_txt):
 	found_category_list = []
-	output_txt = category_txt + "_output.txt"
+	output_txt = category_txt + "_output_3.txt"
 	category_txt = category_txt + ".txt"
 
-	get_csv.create_csv_company(bName)
+	valid = get_csv.create_csv_company(bName, 10)
+	if not valid:
+		print "This company doesn't have enough info."
+		return 0
 	gen_category_1 = bName
 
 	fileobj = open(category_txt)
@@ -95,6 +99,31 @@ def run_test_3(bName, category_txt):
 		comparison = gen_category_1 + "\t" + gen_category_2 + "\t" + str(dtw_dist)
 		fileobj.write(comparison + "\n")
 	fileobj.close()
+	#print bName
+	#review_plotter.review_plotter(bName)
 
-	review_plotter.review_plotter(bName)
+# This test runs company vs company in a specific category using time normalization, z normalization and DTW
+def run_test_4(category_name, nop):
+	found_category_list = []
+	output_name = category_name + "_output_4.txt"
+
+	found_category_list = get_csv.get_category_csv(category_name)
+	fileobj = open(output_name, "w")
+
+	for i in range(len(found_category_list)):
+		business_1 = found_category_list[i]
+		found_1 = get_csv.create_csv_company(business_1, 10)
+		if found_1:
+			for j in range(len(found_category_list)):
+				business_2 = found_category_list[j]
+				found_2 = get_csv.create_csv_company(business_2, 10)
+				if found_2:
+					print business_1
+					print business_2
+					dtw_dist = ts_lib.pattern_finder_quartile(business_1, business_2)
+					comparison = business_1 + "\t" + business_2 + "\t" + str(dtw_dist)
+					fileobj.write(comparison + "\n")
+	fileobj.close()
+	#review_plotter.review_plotter(bName)
+
 

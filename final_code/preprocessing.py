@@ -63,8 +63,10 @@ def find_relevant_categories(parent_category, category_txt):
 		if category_list[i]['parents'] == [parent_category]:
 			s = category_list[i]['title']
 			title_csv = string.replace(s, '/', '_')
-			output = get_csv.create_category_csv(title_csv,[s])
+			output = get_csv.create_category_csv(title_csv,[s], 1000)
 			if output:
 				fileobj.write(s + "\n")
 			#print category_list[i]['title']
 	fileobj.close()
+
+

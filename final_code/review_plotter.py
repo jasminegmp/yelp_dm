@@ -2,7 +2,8 @@ from matplotlib import pyplot as plt
 import pandas as pd
 import math
 import numpy as np
-
+import csv
+import get_csv
 # Download this https://pypi.python.org/pypi/fastdtw
 from scipy.spatial.distance import euclidean
 from fastdtw import fastdtw
@@ -15,6 +16,7 @@ def review_plotter(bName):
 
 	# Read in csv file for Pandas
 	#bName = raw_input();
+	bName = get_csv.alphanumeric_name(bName)
 	bName_csv = bName + ".csv"
 	#bName = "healthy.csv"
 	bData = pd.read_csv(bName_csv)
@@ -28,7 +30,8 @@ def review_plotter(bName):
 
 	df =  df.sort_values(by=['date'])
 	new_df = df.set_index('date')
-	#print new_df
+
+	print new_df
 	ts = pd.Series.rolling(new_df['stars'], window=100).mean()
 	ts.plot(style='b-', x_compat=True)
 
