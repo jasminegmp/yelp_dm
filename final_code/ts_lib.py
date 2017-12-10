@@ -45,6 +45,9 @@ def perform_quartile_dtw(ts_1, ts_2):
 	# Following is done because DTW requires same length time series
 	compare_len = min(len(ts_1),len(ts_2))
 
+	x = ts_1[-compare_len:]
+	y = ts_2[-compare_len:]
+
 	dtw_dist, path = fastdtw(ts_1, ts_2, dist=euclidean)
 
 	print dtw_dist
@@ -61,6 +64,15 @@ def normalize_quartile(ts, new_df):
 		ts_value.append(temp_val)
 	#print ts
 	return ts_time, ts_value
+
+# perform z-normalization (from 0 to 1)
+def z_normalization(ts_time, ts_val,):
+	max = 1
+	min = 0
+	znorm_ts_val = []
+	for i in range(len(ts_val)):
+		znorm_ts_val.append((ts_time[i] - min)/(max - min))
+	return znorm_ts_val
 
 
 def pattern_finder(bName_1, bName_2):
@@ -102,7 +114,10 @@ def pattern_finder_quartile(bName_1, bName_2):
 	ts_time_1, ts_value_1 = normalize_quartile(ts_1, newdf1)
 	ts_time_2, ts_value_2 = normalize_quartile(ts_2, newdf2)
 
-	dtw_dist = perform_quartile_dtw(ts_value_1, ts_value_2)
+	z_norm_ts_1 = z_normalization(ts_time_1, ts_value_1)
+	z_norm_ts_2 = z_normalization(ts_time_2, ts_value_2)
+
+	dtw_dist = perform_quartile_dtw(z_norm_ts_1, z_norm_ts_2)
 
 	return dtw_dist
 
