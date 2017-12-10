@@ -1,0 +1,21 @@
+Chipotle Mexican Grill	steak 'n shake	4.68935672515
+Chipotle Mexican Grill	denny's	12.3400247413
+Chipotle Mexican Grill	eat'n park	5.42046783626
+Chipotle Mexican Grill	pei wei	4.54678362573
+Chipotle Mexican Grill	waffle house	6.19482038429
+Chipotle Mexican Grill	johnny rockets	4.97270955166
+Chipotle Mexican Grill	cracker barrel old country store	4.26741095162
+Chipotle Mexican Grill	sunset grill	6.19482038429
+Chipotle Mexican Grill	wimpy's diner	3.65153078775
+Chipotle Mexican Grill	freddy's frozen custard & steakburgers	3.24471434998
+Chipotle Mexican Grill	shoeless joe's	3.65153078775
+Chipotle Mexican Grill	wild wing	7.63131313131
+Chipotle Mexican Grill	eggsmart	5.72825292398
+Chipotle Mexican Grill	ihop	12.264619883
+Chipotle Mexican Grill	village inn	4.00584795322
+Chipotle Mexican Grill	a&w	6.35380116959
+Chipotle Mexican Grill	moe's southwest grill	6.51035245772
+Chipotle Mexican Grill	hardee's	3.52083333333
+Chipotle Mexican Grill	ben & florentine	3.34168755221
+Chipotle Mexican Grill	swiss chalet rotisserie & grill	12.6005215742
+Chipotle Mexican Grill	bob evans	7.15062045357

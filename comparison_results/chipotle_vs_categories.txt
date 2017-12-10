@@ -1,0 +1,25 @@
+Chipotle Mexican Grill	Asian Fusion	211.664126533
+Chipotle Mexican Grill	Barbeque	187.786642828
+Chipotle Mexican Grill	Breakfast & Brunch	647.093343481
+Chipotle Mexican Grill	Burgers	669.878195252
+Chipotle Mexican Grill	Cafes	441.330237002
+Chipotle Mexican Grill	Chicken Wings	290.724624836
+Chipotle Mexican Grill	Chinese	615.404247602
+Chipotle Mexican Grill	Delis	213.359903382
+Chipotle Mexican Grill	Diners	140.436643729
+Chipotle Mexican Grill	Fast Food	936.573592129
+Chipotle Mexican Grill	Indian	166.845181223
+Chipotle Mexican Grill	Italian	699.861853871
+Chipotle Mexican Grill	Japanese	319.194456483
+Chipotle Mexican Grill	Mediterranean	199.464012596
+Chipotle Mexican Grill	Mexican	615.233137307
+Chipotle Mexican Grill	American (New)	595.537314925
+Chipotle Mexican Grill	Canadian (New)	178.321646046
+Chipotle Mexican Grill	Pizza	912.570901777
+Chipotle Mexican Grill	Salad	261.948263
+Chipotle Mexican Grill	Sandwiches	948.918290212
+Chipotle Mexican Grill	Seafood	308.621369809
+Chipotle Mexican Grill	Steakhouses	170.55453852
+Chipotle Mexican Grill	Sushi Bars	259.055847475
+Chipotle Mexican Grill	Thai	169.881193036
+Chipotle Mexican Grill	American (Traditional)	927.143781975

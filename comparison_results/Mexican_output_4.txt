@@ -1,0 +1,27 @@
+Chipotle Mexican Grill	el pollo loco	8.11957197959
+Chipotle Mexican Grill	baja fresh mexican grill	3.65153078775
+Chipotle Mexican Grill	taco bell	8.1978284873
+Chipotle Mexican Grill	cafe rio	3.74269005848
+Chipotle Mexican Grill	chipotle mexican grill	0.0
+Chipotle Mexican Grill	del taco	10.9276315789
+Chipotle Mexican Grill	qdoba mexican eats	6.19482038429
+Chipotle Mexican Grill	roberto's taco shop	8.60994152047
+Chipotle Mexican Grill	moe's southwest grill	6.51035245772
+Chipotle Mexican Grill	rubio's	4.54678362573
+Chipotle Mexican Grill	filiberto's mexican food	4.97270955166
+Chipotle Mexican Grill	burrito boyz	3.74269005848
+Chipotle Mexican Grill	mucho burrito	4.54678362573
+Chipotle Mexican Grill	america's taco shop	3.23391812865
+Chipotle Mexican Grill	federico's mexican food	3.4350877193
+Chipotle Mexican Grill	quesada burritos & tacos	3.52083333333
+Chipotle Mexican Grill	carl's jr.	6.35380116959
+Chipotle Mexican Grill	salsarita's fresh mexican grill	3.12493354599
+Chipotle Mexican Grill	qdoba mexican grill	3.24471434998
+Chipotle Mexican Grill	fresh & easy	6.19482038429
+Chipotle Mexican Grill	filiberto's	4.26741095162
+Chipotle Mexican Grill	fat bastard burrito	3.34168755221
+Chipotle Mexican Grill	kfc	0.649238991519
+Chipotle Mexican Grill	chili's	8.28362573099
+Chipotle Mexican Grill	carl's jr	7.15062045357
+Chipotle Mexican Grill	einstein bros	3.23391812865
+Chipotle Mexican Grill	freshii	5.88197767145
