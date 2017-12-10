@@ -14,8 +14,10 @@ print "     Enter the Start Date(yyyy-mm-dd):",
 startdate=datetime.strptime(raw_input(),date_format);
 print "     Enter the End Date:(yyyy-mm-dd):",
 enddate=datetime.strptime(raw_input(),date_format);
-print "     Enter the name of the file:",
+print "     Enter the name of the first file:",
 file=raw_input();
+print "     Enter the name of the second file:",
+file2=raw_input();
 csvFile=csv.writer(open("words.csv","wb+"));
 csvFile.writerow(["id", "date", "stars","text"]);
 
@@ -43,7 +45,7 @@ with open(file+'.csv') as f1:
                         wholeText += word+ " ";
 
         c=1
-with open('diners.csv') as f1:
+with open(file2+'.csv') as f1:
     reader = csv.reader(f1);
     c=0;
     for row in reader :
