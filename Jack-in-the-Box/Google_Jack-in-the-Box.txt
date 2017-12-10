@@ -1,0 +1,1 @@
+[['Google_Chipotle.csv', 1814.0], ['Google_Dairy-Queen.csv', 2650.0], ['Google_Dominos.csv', 2098.0], ['Google_Ecoli.csv', 3372.0], ['Google_Food-Poisoning.csv', 4204.0], ['Google_KFC.csv', 3778.0], ['Google_Norovirus.csv', 10647.0], ['Google_Puppy.csv', 5365.0], ['Google_Salmonella.csv', 1340.0]]
