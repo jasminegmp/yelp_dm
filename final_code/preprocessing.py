@@ -1,4 +1,4 @@
-# Data pre-processing file
+# This file contains all library functions that relate to pre-processing data
 
 from datetime import datetime
 from bs4 import BeautifulSoup as soup
@@ -46,7 +46,8 @@ def jsn_to_csv_cleanup(business_json_path, review_json_path):
 	       # print counter
 	print "done"
 
-
+# This function creates a csv for all categories that fall under a parent category
+# Such as Restaurant contains Mexican, Italian, Chinese, etc.
 def find_relevant_categories(parent_category, category_txt):
 
 	print "     Looking for all " + parent_category + "in categories.json ..."

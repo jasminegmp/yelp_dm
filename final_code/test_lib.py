@@ -1,3 +1,4 @@
+# This file contains all library functions that are data mining tests called by test_script
 import json
 import dicttoxml
 import get_csv
@@ -79,7 +80,7 @@ def run_test_3(bName, category_txt):
 	output_txt = category_txt + "_output_3.txt"
 	category_txt = category_txt + ".txt"
 
-	valid = get_csv.create_csv_company(bName, 10)
+	valid = get_csv.create_csv_company(bName, 0)
 	if not valid:
 		print "This company doesn't have enough info."
 		return 0
@@ -99,30 +100,30 @@ def run_test_3(bName, category_txt):
 		comparison = gen_category_1 + "\t" + gen_category_2 + "\t" + str(dtw_dist)
 		fileobj.write(comparison + "\n")
 	fileobj.close()
-	#print bName
 	#review_plotter.review_plotter(bName)
 
 # This test runs company vs company in a specific category using time normalization, z normalization and DTW
-def run_test_4(category_name, nop):
+def run_test_4(business_1, category_name):
 	found_category_list = []
+	ran_list = []
 	output_name = category_name + "_output_4.txt"
 
 	found_category_list = get_csv.get_category_csv(category_name)
 	fileobj = open(output_name, "w")
 
-	for i in range(len(found_category_list)):
-		business_1 = found_category_list[i]
-		found_1 = get_csv.create_csv_company(business_1, 10)
-		if found_1:
-			for j in range(len(found_category_list)):
-				business_2 = found_category_list[j]
-				found_2 = get_csv.create_csv_company(business_2, 10)
-				if found_2:
-					print business_1
-					print business_2
-					dtw_dist = ts_lib.pattern_finder_quartile(business_1, business_2)
-					comparison = business_1 + "\t" + business_2 + "\t" + str(dtw_dist)
-					fileobj.write(comparison + "\n")
+	for j in range(len(found_category_list)):
+		business_2 = found_category_list[j]
+		business_2 = business_2.lower()
+		if business_2 not in ran_list:
+			found_2 = get_csv.create_csv_company(business_2, 10)
+			if found_2:
+				print business_1
+				print business_2
+				dtw_dist = ts_lib.pattern_finder_quartile(business_1, business_2)
+				comparison = business_1 + "\t" + business_2 + "\t" + str(dtw_dist)
+				fileobj.write(comparison + "\n")
+			ran_list.append(business_2)
+			#print ran_list
 	fileobj.close()
 	#review_plotter.review_plotter(bName)
 

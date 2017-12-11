@@ -1,3 +1,4 @@
+# This file contains all library functions that pertain to time series data mining
 from matplotlib import pyplot as plt
 import pandas as pd
 import math
@@ -8,11 +9,17 @@ import get_csv
 from scipy.spatial.distance import euclidean
 from fastdtw import fastdtw
 
+# Creates pandas data frame
 def create_pandas_df(df_data):
 	df = pd.DataFrame(df_data, columns = ['id', 'date', 'stars', 'text'])
 	return df
 
+# Preprocesses time series because of challenges we ran into
+# First, multiple reviews on same date. Solved it by separating each data point that had same
+# timestamp by an hour
+# Second, review range was too discrete. Solved it by performing a rolling average
 def preprocess_ts(df):
+
 	# https://stackoverflow.com/questions/44128600/how-should-i-handle-duplicate-times-in-time-series-data-with-pandas
 	df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')
 	df['date'] = df['date'] + pd.to_timedelta(df.groupby('date').cumcount(), unit='h')
@@ -23,7 +30,7 @@ def preprocess_ts(df):
 	if len(df) > 100:
 		ts = pd.Series.rolling(new_df['stars'], window=100).mean()
 	else:
-		ts = pd.Series.rolling(new_df['stars'], window=10).mean()
+		ts = pd.Series.rolling(new_df['stars'], window=1).mean()
 
 	# Remove any NA datapoints
 	ts = ts.dropna()
@@ -31,6 +38,7 @@ def preprocess_ts(df):
 	#print new_df
 	return ts, new_df
 
+# Performs DTW provided two time series
 def perform_dtw(ts_1, ts_2):
 
 	# Following is done because DTW requires same length time series
@@ -45,6 +53,7 @@ def perform_dtw(ts_1, ts_2):
 
 	return dtw_dist
 
+# Performs DTW provided two time series that are time normalized using quartiles
 def perform_quartile_dtw(ts_1, ts_2):
 
 	# Following is done because DTW requires same length time series
@@ -59,6 +68,7 @@ def perform_quartile_dtw(ts_1, ts_2):
 
 	return dtw_dist
 
+# Normalizes time series such that x axis is normalized using quartiles
 def normalize_quartile(ts, new_df):
 	ts_time = []
 	ts_value = []
@@ -69,7 +79,7 @@ def normalize_quartile(ts, new_df):
 		ts_value.append(temp_val)
 	return ts_time, ts_value
 
-# perform z-normalization (from 0 to 1)
+# Perform z-normalization (from 0 to 1)
 def z_normalization(ts_time, ts_val,):
 	max = 1
 	min = 0
@@ -78,7 +88,7 @@ def z_normalization(ts_time, ts_val,):
 		znorm_ts_val.append((ts_time[i] - min)/(max - min))
 	return znorm_ts_val
 
-
+# Perform DTW
 def pattern_finder(bName_1, bName_2):
 	bName1_csv = get_csv.alphanumeric_name(bName_1)
 	bName2_csv = get_csv.alphanumeric_name(bName_2)
@@ -100,6 +110,7 @@ def pattern_finder(bName_1, bName_2):
 
 	return dtw_dist
 
+# Perform DTW after Z normalization and time normalization
 def pattern_finder_quartile(bName_1, bName_2):
 	bName1_csv = get_csv.alphanumeric_name(bName_1)
 	bName2_csv = get_csv.alphanumeric_name(bName_2)

@@ -1,3 +1,4 @@
+# This file contains all library functions that relate to CSV interactions
 from datetime import datetime
 from bs4 import BeautifulSoup as soup
 import json
@@ -8,6 +9,7 @@ from matplotlib import pyplot as plt
 import pandas as pd
 import numpy as np
 
+# handles non-alphanumeric characters
 def alphanumeric_name(name):
 # Read from here on how to remove all non alphanumeric
 # https://stackoverflow.com/questions/22520932/python-remove-all-non-alphabet-chars-from-string
@@ -15,10 +17,12 @@ def alphanumeric_name(name):
 	name = regex.sub('', name)
 	return name
 
+# create panads data frame
 def create_pandas_df(df_data):
 	df = pd.DataFrame(df_data, columns = ['name', 'id', 'date', 'stars', 'text'])
 	return df
 
+# create csv for category
 def create_category_csv(gen_category, categories, min_reviews):
 
 	idList=[];
@@ -61,6 +65,7 @@ def create_category_csv(gen_category, categories, min_reviews):
 	else:
 		return 0
 
+# get dataframe given csv
 def get_category_csv(gen_category):
 
 	idList=[];
@@ -77,6 +82,7 @@ def get_category_csv(gen_category):
 	#print df['name']
 	return df['name']
 
+# create csv given company
 def create_csv_company(bName, min_reviews):
 	csv_name = alphanumeric_name(bName)
 	csvFile=csv.writer(open(csv_name+".csv","wb+"));
