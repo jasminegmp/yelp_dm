@@ -1,0 +1,144 @@
+Chipotle Mexican Grill	el pollo loco	8.11957197959
+Chipotle Mexican Grill	five guys	14.6188630491
+Chipotle Mexican Grill	steak 'n shake	4.68935672515
+Chipotle Mexican Grill	subway	54.1287609468
+Chipotle Mexican Grill	firehouse subs	12.264619883
+Chipotle Mexican Grill	mcdonald's	60.4888509269
+Chipotle Mexican Grill	taco bell	8.1978284873
+Chipotle Mexican Grill	kfc	0.649238991519
+Chipotle Mexican Grill	chipotle mexican grill	0.0
+Chipotle Mexican Grill	wendy's	3.36827300318
+Chipotle Mexican Grill	jack in the box	0.396086369771
+Chipotle Mexican Grill	panda express	1.9560336364
+Chipotle Mexican Grill	raising cane's	3.87134502924
+Chipotle Mexican Grill	popeyes louisiana kitchen	5.76829328223
+Chipotle Mexican Grill	bojangles' famous chicken 'n biscuits	6.98728070175
+Chipotle Mexican Grill	arby's	7.12351894228
+Chipotle Mexican Grill	dairy queen	0.58918128655
+Chipotle Mexican Grill	harvey's restaurants	7.95817442156
+Chipotle Mexican Grill	denny's	12.3400247413
+Chipotle Mexican Grill	dunkin' donuts	0.126592975696
+Chipotle Mexican Grill	whataburger	3.74269005848
+Chipotle Mexican Grill	qdoba mexican eats	6.19482038429
+Chipotle Mexican Grill	jimmy john's	1.47542615404
+Chipotle Mexican Grill	roberto's taco shop	8.60994152047
+Chipotle Mexican Grill	carl's jr	7.15062045357
+Chipotle Mexican Grill	carl's jr.	6.35380116959
+Chipotle Mexican Grill	del taco	10.9276315789
+Chipotle Mexican Grill	sonic drive-in	11.7617594711
+Chipotle Mexican Grill	burger king	5.56664650131
+Chipotle Mexican Grill	which wich	4.12865497076
+Chipotle Mexican Grill	in-n-out burger	5.57555178268
+Chipotle Mexican Grill	wienerschnitzel	3.52083333333
+Chipotle Mexican Grill	jersey mike's subs	13.77582846
+Chipotle Mexican Grill	hardee's	3.52083333333
+Chipotle Mexican Grill	church's chicken	5.88197767145
+Chipotle Mexican Grill	pei wei	4.54678362573
+Chipotle Mexican Grill	long john silver's	5.88197767145
+Chipotle Mexican Grill	mod pizza	3.34168755221
+Chipotle Mexican Grill	krispy kreme	3.24471434998
+Chipotle Mexican Grill	noodles & company	5.27707199032
+Chipotle Mexican Grill	culver's	5.72825292398
+Chipotle Mexican Grill	johnny rockets	4.97270955166
+Chipotle Mexican Grill	villa madina	3.52083333333
+Chipotle Mexican Grill	applebee's	14.2821637427
+Chipotle Mexican Grill	chick-fil-a	14.2821637427
+Chipotle Mexican Grill	extreme pita	3.65153078775
+Chipotle Mexican Grill	cook out	3.4350877193
+Chipotle Mexican Grill	mucho burrito	4.54678362573
+Chipotle Mexican Grill	federico's mexican food	3.4350877193
+Chipotle Mexican Grill	potbelly sandwich shop	4.12865497076
+Chipotle Mexican Grill	a&w	6.35380116959
+Chipotle Mexican Grill	pita pit	5.27707199032
+Chipotle Mexican Grill	zaxby's chicken fingers & buffalo wings	3.87134502924
+Chipotle Mexican Grill	mcdonalds	8.93870895187
+Chipotle Mexican Grill	quiznos	6.98728070175
+Chipotle Mexican Grill	chicken king	3.23391812865
+Chipotle Mexican Grill	quesada burritos & tacos	3.52083333333
+Chipotle Mexican Grill	hot dog on a stick	3.12493354599
+Chipotle Mexican Grill	burrito boyz	3.74269005848
+Chipotle Mexican Grill	salsarita's fresh mexican grill	3.12493354599
+Chipotle Mexican Grill	tim hortons	1.41996658312
+Chipotle Mexican Grill	sonic	3.87134502924
+Chipotle Mexican Grill	aroma espresso bar	5.88197767145
+Chipotle Mexican Grill	auntie anne's	4.00584795322
+Chipotle Mexican Grill	fatburger	4.68935672515
+Chipotle Mexican Grill	sarku japan	3.24471434998
+Chipotle Mexican Grill	waffle house	6.19482038429
+Chipotle Mexican Grill	moe's southwest grill	6.51035245772
+Chipotle Mexican Grill	pizza pizza	11.7617594711
+Chipotle Mexican Grill	rubio's	4.54678362573
+Chipotle Mexican Grill	pizza hut	7.323762043
+Chipotle Mexican Grill	swiss chalet rotisserie & grill	12.6005215742
+Chipotle Mexican Grill	cracker barrel old country store	4.26741095162
+Chipotle Mexican Grill	papa john's pizza	4.13585964912
+Chipotle Mexican Grill	wetzel's pretzels	3.4350877193
+Chipotle Mexican Grill	mr hero	3.24471434998
+Chipotle Mexican Grill	thai express	6.98728070175
+Chipotle Mexican Grill	mr sub	3.12493354599
+Chipotle Mexican Grill	wingstop	6.82816014395
+Chipotle Mexican Grill	starbucks	100.59462486
+Chipotle Mexican Grill	einstein bros	3.23391812865
+Chipotle Mexican Grill	freddy's frozen custard & steakburgers	3.24471434998
+Chipotle Mexican Grill	cousins subs	3.34168755221
+Chipotle Mexican Grill	california sandwiches	3.23391812865
+Chipotle Mexican Grill	china a go go	3.23391812865
+Chipotle Mexican Grill	tropical smoothie cafe	7.95817442156
+Chipotle Mexican Grill	sheetz	5.57555178268
+Chipotle Mexican Grill	fit for life	3.12493354599
+Chipotle Mexican Grill	ruby tuesday	4.68935672515
+Chipotle Mexican Grill	cinnabon	3.65153078775
+Chipotle Mexican Grill	smashburger	6.66374269006
+Chipotle Mexican Grill	charley's grilled subs	3.12493354599
+Chipotle Mexican Grill	jack-in-the box drive thru	3.34168755221
+Chipotle Mexican Grill	nathan's famous	3.23391812865
+Chipotle Mexican Grill	pita land	3.52083333333
+Chipotle Mexican Grill	first watch - breakfast, brunch & lunch	5.42046783626
+Chipotle Mexican Grill	fired pie	3.52083333333
+Chipotle Mexican Grill	hooters	4.26741095162
+Chipotle Mexican Grill	schlotzsky's	3.24471434998
+Chipotle Mexican Grill	domino's pizza	0.931657501964
+Chipotle Mexican Grill	filiberto's	4.26741095162
+Chipotle Mexican Grill	wild wing	7.63131313131
+Chipotle Mexican Grill	bob evans	7.15062045357
+Chipotle Mexican Grill	little caesar's pizza	3.87134502924
+Chipotle Mexican Grill	nando's	3.23391812865
+Chipotle Mexican Grill	kelseys original roadhouse	3.74269005848
+Chipotle Mexican Grill	chevron	6.98728070175
+Chipotle Mexican Grill	jimmy the greek	3.23391812865
+Chipotle Mexican Grill	menchie's frozen yogurt	5.12071846282
+Chipotle Mexican Grill	eggsmart	5.72825292398
+Chipotle Mexican Grill	st. louis bar & grill	5.42046783626
+Chipotle Mexican Grill	freshii	5.88197767145
+Chipotle Mexican Grill	penn station	3.34168755221
+Chipotle Mexican Grill	eat'n park	5.42046783626
+Chipotle Mexican Grill	little caesars pizza	11.0950067476
+Chipotle Mexican Grill	ihop	12.264619883
+Chipotle Mexican Grill	tim horton's	8.4448024824
+Chipotle Mexican Grill	papa murphy's	7.95817442156
+Chipotle Mexican Grill	sbarro	3.23391812865
+Chipotle Mexican Grill	teriyaki madness	3.65153078775
+Chipotle Mexican Grill	america's taco shop	3.23391812865
+Chipotle Mexican Grill	fat bastard burrito	3.34168755221
+Chipotle Mexican Grill	penn station east coast subs	3.4350877193
+Chipotle Mexican Grill	pizza nova	6.19482038429
+Chipotle Mexican Grill	chili's	8.28362573099
+Chipotle Mexican Grill	native grill & wings	3.87134502924
+Chipotle Mexican Grill	yogis grill	3.24471434998
+Chipotle Mexican Grill	cafe rio	3.74269005848
+Chipotle Mexican Grill	mr. hero	3.12493354599
+Chipotle Mexican Grill	olive garden italian restaurant	7.30868838764
+Chipotle Mexican Grill	sushi shop	4.26741095162
+Chipotle Mexican Grill	circle k	4.13585964912
+Chipotle Mexican Grill	boston market	5.88197767145
+Chipotle Mexican Grill	buffalo wild wings	10.9276315789
+Chipotle Mexican Grill	tcby	4.12865497076
+Chipotle Mexican Grill	osmow's	3.74269005848
+Chipotle Mexican Grill	filiberto's mexican food	4.97270955166
+Chipotle Mexican Grill	tilted kilt pub & eatery	3.52083333333
+Chipotle Mexican Grill	blimpie	3.24471434998
+Chipotle Mexican Grill	samurai sam's	3.87134502924
+Chipotle Mexican Grill	hungry howie's pizza	6.66374269006
+Chipotle Mexican Grill	montana's bbq & bar	3.74269005848
+Chipotle Mexican Grill	rôtisserie st-hubert	3.74269005848
+Chipotle Mexican Grill	baja fresh mexican grill	3.65153078775
