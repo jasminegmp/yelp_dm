@@ -8,8 +8,6 @@ from scipy.spatial.distance import euclidean
 from fastdtw import fastdtw
 from sklearn.preprocessing import MinMaxScaler
 
-#for file1 in os.listdir():
-
 name = raw_input("What is the name of the data you want to compare? ")
 
 # This is the folder that we grab our files from
